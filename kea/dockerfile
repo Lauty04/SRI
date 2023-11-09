@@ -1,0 +1,14 @@
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install -y kea-dhcp4-server nano
+
+RUN mkdir -p /etc/kea
+
+COPY kea-dhcp4.conf /etc/kea/kea-dhcp4.conf
+
+RUN mkdir -p /var/run/kea
+
+EXPOSE 67/udp
+
+CMD ["/usr/sbin/kea-dhcp4", "-c", "/etc/kea/kea-dhcp4.conf"]
+
