@@ -1,0 +1,19 @@
+FROM ubuntu:latest
+
+# Instalar apt-utils y actualizar la lista de paquetes
+RUN apt-get update && apt-get install -y apt-utils
+
+# Instalar kea-dhcp4-server y nano
+RUN apt-get install -y kea-dhcp4-server nano
+
+# Crear directorios y copiar la configuración
+RUN mkdir -p /etc/kea
+COPY kea-dhcp4.conf /etc/kea/kea-dhcp4.conf
+
+RUN mkdir -p /var/run/kea
+
+# Exponer el puerto UDP 67
+EXPOSE 67/udp
+
+# Comando por defecto
+CMD ["/usr/sbin/kea-dhcp4", "-c", "/etc/kea/kea-dhcp4.conf"]
