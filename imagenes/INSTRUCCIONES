@@ -1,0 +1,6 @@
+Javi Instrucciones:
+TerminalTonto es ek terminal docker normal para hacer las pruebas.
+Kea-1 es el servidor kea con alta disponibilidad.
+kea es el servidor kea normal el primero que realizamos.
+Master es el servidor DNS maestro.
+Slave es el servidor DNS exclavo.
