@@ -64,7 +64,7 @@ Ejecutamos el siguiente comando
 
     sudo newaliases
 
-Y reiniciamos el postfix y vemos que no nos de errores.
+Reiniciamos el postfix y vemos que no nos de errores.
 
 
 ---
