@@ -44,7 +44,7 @@ Como indicamos en  la chroot list creamos ese archivo y ingresamos los usuarios 
     lautaro
 
 Y luego debemos crear el usuaio e crear la carpeta public_html para poder subir los archivos allí.
-Como queremos que al subir a traves del filezilla los archivos respectivos a de la pagina web del usuario lo que debemos hacer es crear el fichero para permitir esa pagina y habilitarlo.
+Como queremos que al subir a traves del filezilla los archivos respectivos a de la pagina web, creamos el archivos para habilitarla
 
     ubuntu@ip-172-31-21-20:/$ cat /etc/apache2/sites-enabled/filezilla.conf
 
