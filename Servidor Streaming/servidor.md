@@ -7,8 +7,7 @@ Instalar ngingx con sus modulos necesarios:
     sudo apt install libnginx-mod-rtmp 
 
 Ahora configuramos el fichero de configuración de nginx y añadimos esto al final del fichero:
-
-    sudo vim /etc/nginx/nginx.conf 
+sudo vim /etc/nginx/nginx.conf 
     
         rtmp{
             server {
