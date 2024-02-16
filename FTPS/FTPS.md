@@ -86,11 +86,11 @@ Ahora compartimos desde nuestro local una pagina al public html.
 
 ![Texto Alternativo](ftps.imgs/07.png)
 
-Y probamos de ingresar a la página:
+Y probamos de ingresar a la página con el dominio y el nombre del usuario:
 
 ![Texto Alternativo](ftps.imgs/08.png)
 
-Ya vemos que podemos ingresar con el dominio y el nombre de usuario y que esta todo en orden.
+Vemos que tenemos nuestra página subida a través de filezilla y todo funciona bien.
 
 
 
