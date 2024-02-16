@@ -11,9 +11,9 @@ Como ampliación podéis configurar una aplicación WEB para el correo electrón
 
 ---
 ---
-
+Tutorial Seguido: https://www.server-world.info/en/note?os=Ubuntu_23.04&p=mail&f=1
 ## Instalamos Postfix
-Instalamos y configuramos postfix (al instalarlo en las opciones de instalación debemos poner ninguna configuración):
+Instalamos y configuramos postfix (al instalarlo en las opciones de instalación debemos poner (ninguna configuración):
 
     sudo apt -y install postfix sasl2-bin 
 
@@ -80,12 +80,12 @@ Editamos el fichero (/etc/dovecot/dovecot.conf) y descomentamos la siguiente lin
 
      30 listen = *, ::
 
-Editamos el fichero (/etc/dovecot/conf.d/10-auth.conf) , descomentamos y editamos las siguiente linea:
+Editamos el fichero (/etc/dovecot/conf.d/10-auth.conf) , descomentamos y editamos las siguientes lineas:
 
      10 disable_plaintext_auth = no
     100 auth_mechanisms = plain login
 
-Editamos el fichero (/etc/dovecot/conf.d/10-master.conf) , descomentamos y editamos las siguiente linea:
+Editamos el fichero (/etc/dovecot/conf.d/10-master.conf) , descomentamos y editamos las siguientes lineas:
 
     106   # Postfix smtp-auth
     107   unix_listener /var/spool/postfix/private/auth {
@@ -210,7 +210,7 @@ Y utilizamos el comando para crear el certificado :
 
 ![](correo.imgs/08.png)
 
-Ahora vamos a configurar el certificado en el archivo de configuración del postfix /etc/postfix/main.cf:
+Vamos a configurar el certificado en el archivo de configuración del postfix /etc/postfix/main.cf:
 
     #TLS CONFIGURATION
 
@@ -249,7 +249,7 @@ Editamos el fichero /etc/dovecot/conf.d/10-ssl.conf:
 
 
 
-Ahora para realizar la configuración vamos al thunderbird y cambiamos la configuración de la siguiente manera:
+Ahora para realizar la configuración segura vamos al thunderbird y cambiamos la configuración de la siguiente forma:
 
 
 Probamos IMAP una vez con el puerto STARTTLS:
