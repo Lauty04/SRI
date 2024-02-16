@@ -36,7 +36,7 @@ Y en VLC media player especificamos donde queremos ver la transmición:
 
 ![Texto alternativo](streaming.md/02.png)
 
-Y ya vemos que podemos ver el home de nuestra maquina donde tenemos el obs:
+Y ya vemos que podemos ver el home de nuestra maquina donde estamos transmitiendo con obs:
 
 
 ![Texto alternativo](streaming.md/03.png)
