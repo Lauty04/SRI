@@ -1,6 +1,6 @@
 # Autentificación digest
 
-Lo primero que debemos hacer es abilitar el servicio y reiniciar el apache para ponerlo en marcha
+Lo primero que debemos hacer es habilitar el servicio y reiniciar  apache para ponerlo en marcha.
 
     a2enmod auth_digest
 
