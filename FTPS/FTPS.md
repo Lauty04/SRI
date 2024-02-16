@@ -38,13 +38,13 @@ Para habilitar el modo pasivo con el protocolo FTPS Eplícito editamos el archiv
 
 
 
-Como indicamos en  la chroot list creamos ese archivo y ingresamos los usuarios que se podran logear.
+Como indicamos en el archivo de configuración en la chroot list creamos ese archivo y ingresamos los usuarios que se podran logear.
 
     ubuntu@ip-172-31-21-20:/$ cat /etc/vsftpd.chroot_list 
     lautaro
 
-Y luego debemos crear el usuaio e crear la carpeta public_html para poder subir los archivos allí.
-Como queremos que al subir a traves del filezilla los archivos respectivos a de la pagina web, creamos el archivos para habilitarla
+El siguiente paso fue crear el usuaio y crear la carpeta public_html para poder subir los archivos allí.
+Como queremos que al subir a traves del filezilla los archivos respectivos a de la pagina web, creamos el archivos para habilitarl la web.
 
     ubuntu@ip-172-31-21-20:/$ cat /etc/apache2/sites-enabled/filezilla.conf
 
