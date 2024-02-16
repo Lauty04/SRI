@@ -4,7 +4,9 @@
 
 Primero creamos una nueva instancia de aws para este nuevo proyecto.
 
-Para realizar esta tarea vamos  a crear un docker compose donde vamos a crear el contenedor de nginx y de cerbot para los certificados y lograr utilizar https, creamos la siguiente rama de directorios y archivos:
+Para realizar esta tarea vamos  a crear un docker compose donde vamos a crear el contenedor de nginx y de cerbot para los certificados y lograr utilizar https. 
+
+Creamos la siguiente rama de directorios y archivos:
 
     ubuntu@ip-172-31-24-89:~/Escritorio/docker_compose$ tree
     .
@@ -50,7 +52,7 @@ services:
     volumes:
       - ./nginx/conf.d/:/etc/nginx/conf.d/:ro
 
-Con esto ya ejecutamos lo ejecutamos para crear los contenedores:
+Con esto ya lo ejecutamos para crear los contenedores:
 
     docker-compose up -d
 
@@ -59,7 +61,7 @@ Y recibimos la siguente salida viendo que se ejecuto correctamente:
     Creating docker_compose_webserver_1 ... done
     Creating docker_compose_certbot_1   ... done
 
-Con esto ya podemos ingresar por http
+Ya podemos ingresar por http
 
 ![Texto alternativo](tarea4.imgs/01ç.png)
 
@@ -135,7 +137,7 @@ Ahora editamos el fichero de configuración de nuestra web para habilitar el htt
     }
 
 
-Realizamos la misma acción de parar y volver a levantar el docker compose y vemos que ya podemos ingresar a nuestra web de forma segura:
+Realizamos la misma acción de parar y volver a levantar el docker compose y poder ingresar a nuestra web de forma segura:
 
 
 ![Texto alternativo](tarea4.imgs/02.png)
